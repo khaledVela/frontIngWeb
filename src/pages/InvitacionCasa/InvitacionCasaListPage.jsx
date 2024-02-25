@@ -82,7 +82,7 @@ const InvitacionCasaList = () => {
                                                 </td>
                                             </tr>
                                         );
-                                    if (localStorage.getItem('rol') == 4)
+                                    if (localStorage.getItem('rol') == 4 && invitacion.residencial_id == localStorage.getItem('residencial_id'))
                                         return (
                                             <tr key={invitacion.id}>
                                                 <td>{invitacion.nombre}</td>
